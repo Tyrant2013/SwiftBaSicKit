@@ -105,8 +105,10 @@ public struct RecommendGroupView: View {
                 LazyHGrid(rows: rows, spacing: 0) {
                     
                     ForEach(allRecommendApps) { recommendApp in
-                        RecommendRow(app: recommendApp)
-                            .padding(.leading, 12)
+                        if recommendApp.data.bundleId != (Bundle.main.bundleIdentifier ?? "") {
+                            RecommendRow(app: recommendApp)
+                                .padding(.leading, 12)
+                        }
                     }
                 }
                 .frame(height: 200)
