@@ -100,6 +100,7 @@ public struct RecommendGroupView: View {
     public var body: some View {
         ConfigSectionContainer {
             Text("Recommend.Developer", bundle: .module, comment: "开发者其它应用")
+                .font(.system(size: 18).bold())
                 .frame(maxWidth: .infinity, alignment: .leading)
             let rows = Array(repeating: GridItem(.flexible(), spacing: 0), count: 2)
             ScrollView(.horizontal, showsIndicators: false) {
