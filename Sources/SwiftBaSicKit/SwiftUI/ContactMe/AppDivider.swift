@@ -15,5 +15,9 @@ public struct AppDivider: View {
 }
 
 #Preview {
-    AppDivider()
+    VStack {
+        AppDivider()
+    }
+    .fullView()
+    .background(Color.white)
 }

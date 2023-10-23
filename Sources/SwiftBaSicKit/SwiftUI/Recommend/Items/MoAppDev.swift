@@ -21,6 +21,8 @@ struct MoAppDev: RecommendItem {
     
     let bundleId: String = "com.indie.MoAppConnectInfo"
     
+    let appId: String = "id1638682919"
+    
     let isEnable: Bool = true
     
     let backgroundColor: Color = .rgb(r: 225, g: 231, b: 238)

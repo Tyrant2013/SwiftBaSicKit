@@ -9,21 +9,23 @@ import Foundation
 import SwiftUI
 
 struct HiHabit: RecommendItem {
-    var imageName: String = "Image_Habit"
+    let imageName: String = "Image_Habit"
     
-    var title: LocalizedStringKey = .init("HiHabit")
+    let title: LocalizedStringKey = .init("HiHabit")
     
-    var content: LocalizedStringKey = .init("Recommend.App.TaSe.Desc")
+    let content: LocalizedStringKey = .init("Recommend.App.TaSe.Desc")
     
-    var scheme: URL = URL(string: "HiHabit")!
+    let scheme: URL = URL(string: "HiHabit")!
     
-    var url: URL = URL(string: "https://apps.apple.com/app/id6451414190")!
+    let url: URL = URL(string: "https://apps.apple.com/app/id6451414190")!
     
-    var bundleId: String = "com.indie.hihabit"
+    let bundleId: String = "com.indie.hihabit"
     
-    var isEnable: Bool = true
+    let appId: String = "id6451414190"
     
-    var backgroundColor: Color = .rgb(r: 225, g: 231, b: 238)
+    let isEnable: Bool = true
+    
+    let backgroundColor: Color = .rgb(r: 225, g: 231, b: 238)
     
     
 }

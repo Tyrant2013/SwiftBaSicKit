@@ -21,6 +21,8 @@ struct XClock: RecommendItem {
     
     let bundleId: String = "com.indie.LittleClock"
     
+    let appId: String = "id1596562904"
+    
     let isEnable: Bool = true
     
     let backgroundColor: Color = .rgb(r: 229, g: 229, b: 220)

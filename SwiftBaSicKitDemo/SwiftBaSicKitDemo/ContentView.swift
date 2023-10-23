@@ -7,13 +7,14 @@
 
 import SwiftUI
 import CoreData
+import SwiftBaSicKit
 
 struct ContentView: View {
     
 
     var body: some View {
         VStack {
-            
+            ConfigFeedbackGroupView()
         }
     }
 

@@ -15,6 +15,7 @@ protocol RecommendItem {
     var scheme: URL { get }
     var url: URL { get }
     var bundleId: String { get }
+    var appId: String { get }
     var isEnable: Bool { get }
     var backgroundColor: Color { get }
 }

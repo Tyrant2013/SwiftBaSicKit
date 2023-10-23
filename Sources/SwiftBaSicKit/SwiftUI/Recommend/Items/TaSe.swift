@@ -21,6 +21,8 @@ struct TaSe: RecommendItem {
     
     let bundleId: String = "com.indie.MDTracker"
     
+    let appId: String = "id1641620172"
+    
     let isEnable: Bool = true
     
     let backgroundColor: Color = .rgb(r: 246, g: 220, b: 140)

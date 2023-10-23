@@ -9,21 +9,23 @@ import Foundation
 import SwiftUI
 
 struct Musiclist: RecommendItem {
-    var imageName: String = "Image_Music"
+    let imageName: String = "Image_Music"
     
-    var title: LocalizedStringKey = .init("Music-list")
+    let title: LocalizedStringKey = .init("Music-list")
     
-    var content: LocalizedStringKey = .init("Recommend.App.Musiclist.Desc")
+    let content: LocalizedStringKey = .init("Recommend.App.Musiclist.Desc")
     
-    var scheme: URL = URL(string: "Music-list")!
+    let scheme: URL = URL(string: "Music-list")!
     
-    var url: URL = URL(string: "https://apps.apple.com/app/id6469257865")!
+    let url: URL = URL(string: "https://apps.apple.com/app/id6469257865")!
     
-    var bundleId: String = "com.indie.musiclist"
+    let bundleId: String = "com.indie.musiclist"
     
-    var isEnable: Bool = true
+    let appId: String = "id6469257865"
     
-    var backgroundColor: Color = .rgb(r: 51, g: 182, b: 229)
+    let isEnable: Bool = true
+    
+    let backgroundColor: Color = .rgb(r: 51, g: 182, b: 229)
     
     
 }

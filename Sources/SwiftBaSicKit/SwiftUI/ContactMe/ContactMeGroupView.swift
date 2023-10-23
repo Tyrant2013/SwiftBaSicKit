@@ -15,9 +15,7 @@ public struct ContactMeGroupView: View {
     public var body: some View {
         ConfigSectionContainer {
             Text("Config.Contact.Me", bundle: .module, comment: "联系开发者")
-                .font(.system(size: 16).bold())
-                .foregroundColor(.primary)
-                .frame(maxWidth: .infinity, alignment: .leading)
+                .modifier(ConfigSectionTitleModifier())
             AppDivider()
                 .padding(.vertical, 8)
             ForEach(items) { ContactMeItem(type: $0) }

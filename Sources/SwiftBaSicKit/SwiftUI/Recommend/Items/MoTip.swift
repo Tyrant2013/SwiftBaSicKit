@@ -21,6 +21,8 @@ struct MoTip: RecommendItem {
     
     let bundleId: String = "com.indie.Tip"
     
+    let appId: String = "id1624253137"
+    
     let isEnable: Bool = true
     
     let backgroundColor: Color = .rgb(r: 51, g: 182, b: 229)

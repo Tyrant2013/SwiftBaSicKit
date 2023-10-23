@@ -9,21 +9,23 @@ import Foundation
 import SwiftUI
 
 struct HiFocus: RecommendItem {
-    var imageName: String = "Image_Focus"
+    let imageName: String = "Image_Focus"
     
-    var title: LocalizedStringKey = .init("HiFocus")
+    let title: LocalizedStringKey = .init("HiFocus")
     
-    var content: LocalizedStringKey = .init("Recommend.App.Focus.Desc")
+    let content: LocalizedStringKey = .init("Recommend.App.Focus.Desc")
     
-    var scheme: URL = URL(string: "HiFocus")!
+    let scheme: URL = URL(string: "HiFocus")!
     
-    var url: URL = URL(string: "https://apps.apple.com/app/id6446201014")!
+    let url: URL = URL(string: "https://apps.apple.com/app/id6446201014")!
     
-    var bundleId: String = "com.indie.OneThinkFocus"
+    let bundleId: String = "com.indie.OneThinkFocus"
     
-    var isEnable: Bool = true
+    let appId: String = "id6446201014"
     
-    var backgroundColor: Color = .rgb(r: 225, g: 231, b: 238)
+    let isEnable: Bool = true
+    
+    let backgroundColor: Color = .rgb(r: 225, g: 231, b: 238)
     
     
 }
