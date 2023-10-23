@@ -10,19 +10,92 @@
             "state" : "translated",
             "value" : "Contact Developer"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "联系开发者"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "聯繫開發者"
+          }
         }
       }
     },
     "Premium.Error.Authorized" : {
       "comment" : "未允许使用支付功能，请开启后再重试。",
-      "extractionState" : "manual"
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Payment function is not allowed, please turn it on and retry."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未允许使用支付功能，请开启后再重试。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未允許使用支付功能，請開啟後重試。"
+          }
+        }
+      }
     },
     "Premium.Error.CanNotPay" : {
       "comment" : "暂不能支付，请稍后再试",
-      "extractionState" : "manual"
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Payment cannot be made at this time, please try again later"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暂不能支付，请稍后再试"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暫不能支付，請稍後再試"
+          }
+        }
+      }
     },
     "Premium.Error.NoRecord" : {
-      "extractionState" : "manual"
+      "comment" : "没有找到购买记录",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No purchase record found"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "没有找到购买记录"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "沒有找到購買記錄"
+          }
+        }
+      }
     },
     "Premium.Error.Product" : {
       "comment" : "获取产品失败，请检查网络",
@@ -33,12 +106,260 @@
             "state" : "translated",
             "value" : "Failed to get product, please check network"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "获取产品失败，请检查网络"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取得產品失敗，請檢查網絡"
+          }
         }
       }
     },
     "Premium.Error.Unknow" : {
       "comment" : "未知错误，请稍后再试。",
-      "extractionState" : "manual"
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unknown error, please try again later."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未知错误，请稍后再试。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未知錯誤，請稍後再試。"
+          }
+        }
+      }
+    },
+    "Recommend.App.Clock" : {
+      "comment" : "简洁好用的时钟",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simple and easy to use clock"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "简洁好用的时钟"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "簡潔好用的時鐘"
+          }
+        }
+      }
+    },
+    "Recommend.App.Clock.Name" : {
+      "comment" : "晓时钟",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "X Clock"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "晓时钟"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "晓时钟"
+          }
+        }
+      }
+    },
+    "Recommend.App.Focus.Desc" : {
+      "comment" : "越简单，越专注，只需心无旁骛。",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Make Focus, Do Better."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "越简单，越专注，只需心无旁骛。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "越簡單，越專注，只需心無旁騖。"
+          }
+        }
+      }
+    },
+    "Recommend.App.Habit.Desc" : {
+      "comment" : "记录习惯，改变自己，做更好的自己。",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tracking Habits,Record Habits."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "记录习惯，改变自己，做更好的自己。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "記錄習慣，改變自己，做更好的自己。"
+          }
+        }
+      }
+    },
+    "Recommend.App.MoDev.Desc" : {
+      "comment" : "Developer Sales And Trends Report",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Developer Sales And Trends Report"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Developer Sales And Trends Report"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Developer Sales And Trends Report"
+          }
+        }
+      }
+    },
+    "Recommend.App.MoTip.Desc" : {
+      "comment" : "Calculate quickly",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calculate quickly"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calculate quickly"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calculate quickly"
+          }
+        }
+      }
+    },
+    "Recommend.App.Musiclist.Desc" : {
+      "comment" : "使用小组件控制音乐",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Control Music From Widget."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用小组件控制音乐"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用小組件控制音樂"
+          }
+        }
+      }
+    },
+    "Recommend.App.TaSe.Desc" : {
+      "comment" : "快速记账，管理收支",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quick bookkeeping to manage income and expenses"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "快速记账，管理收支"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "快速記賬，管理收支"
+          }
+        }
+      }
+    },
+    "Recommend.Developer" : {
+      "comment" : "开发者的其它应用",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Other Applications by Developers"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "开发者的其它应用"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "開發者的其它應用"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
