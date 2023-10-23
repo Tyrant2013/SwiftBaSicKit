@@ -24,8 +24,8 @@ struct RecommendRow: View {
                 .resizable()
                 .frame(width: 60, height: 60)
                 .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
-                .shadow(color: .gray.opacity(0.4), radius: 4, x: 4, y: 4)
-                .shadow(color: .white, radius: 4, x: -4, y: -4)
+                .shadow(color: .black.opacity(0.3), radius: 4, x: 4, y: 4)
+                .shadow(color: .white.opacity(0.3), radius: 4, x: -4, y: -4)
             VStack(alignment: .leading, spacing: 8) {
                 HStack(spacing: 12) {
                     Text(item.title, bundle: .module)
@@ -71,7 +71,9 @@ struct RecommendRow: View {
         .padding(.horizontal, 12)
         .padding(.vertical, 16)
         .frame(width: 300, alignment: .center)
-        .background(LinearGradient(colors: [.gray.opacity(0.06), .white.opacity(0.8)], startPoint: .leading, endPoint: .trailing))
+        .background(LinearGradient(colors: [.gray.opacity(0.06), .white.opacity(0.75)],
+                                   startPoint: .leading,
+                                   endPoint: .trailing))
         .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
         .overlay(
             RoundedRectangle(cornerRadius: cornerRadius)
@@ -99,7 +101,6 @@ public struct RecommendGroupView: View {
         ConfigSectionContainer {
             Text("Recommend.Developer", bundle: .module, comment: "开发者其它应用")
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.leading)
             let rows = Array(repeating: GridItem(.flexible(), spacing: 0), count: 2)
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: rows, spacing: 0) {
@@ -114,7 +115,8 @@ public struct RecommendGroupView: View {
                 .frame(height: 200)
             }
         }
-        .frame(height: 250)
+//        .frame(height: 250)
+        .padding(.vertical, 12)
         .frame(maxWidth: .infinity)
     }
 }

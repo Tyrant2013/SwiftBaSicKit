@@ -29,12 +29,12 @@ public struct ConfigSectionContainer<SectionContent: View>: View {
         VStack(spacing: itemSpace) {
             content()
         }
-        .foregroundColor(.primary)
-        .padding(edge, padding)
-        .background(
-            RoundedRectangle(cornerRadius: cornerRadius)
-                .fill(Color.white)
-        )
+//        .foregroundColor(.primary)
+//        .padding(edge, padding)
+//        .background(
+//            RoundedRectangle(cornerRadius: cornerRadius)
+//                .fill(Color.white)
+//        )
     }
 }
 

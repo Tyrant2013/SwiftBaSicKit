@@ -52,8 +52,8 @@ fileprivate struct ContactMeItem: View {
                 .padding(.trailing)
         }
         .padding(.vertical, 12)
-        .background(Color.white)
         .overlay(AppDivider(), alignment: .bottom)
+        .makeClickable()
         .onTapGesture(perform: type.action)
     }
         

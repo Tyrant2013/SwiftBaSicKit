@@ -11,10 +11,10 @@ struct SwiftUIView: View {
     var body: some View {
         VStack {
             ContactMeGroupView()
+            
             RecommendGroupView()
         }
         .fullView()
-        .background(Color.black)
     }
 }
 
