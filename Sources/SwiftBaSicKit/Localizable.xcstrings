@@ -1,0 +1,45 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Config.Contact.Me" : {
+      "comment" : "联系开发者",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contact Developer"
+          }
+        }
+      }
+    },
+    "Premium.Error.Authorized" : {
+      "comment" : "未允许使用支付功能，请开启后再重试。",
+      "extractionState" : "manual"
+    },
+    "Premium.Error.CanNotPay" : {
+      "comment" : "暂不能支付，请稍后再试",
+      "extractionState" : "manual"
+    },
+    "Premium.Error.NoRecord" : {
+      "extractionState" : "manual"
+    },
+    "Premium.Error.Product" : {
+      "comment" : "获取产品失败，请检查网络",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to get product, please check network"
+          }
+        }
+      }
+    },
+    "Premium.Error.Unknow" : {
+      "comment" : "未知错误，请稍后再试。",
+      "extractionState" : "manual"
+    }
+  },
+  "version" : "1.0"
+}
