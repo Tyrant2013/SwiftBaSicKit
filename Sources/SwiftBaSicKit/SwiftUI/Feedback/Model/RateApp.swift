@@ -16,7 +16,7 @@ struct RateApp: FeedbackItem {
     var title: String = "Feedback.RateUs".localizable(bundle: .module, arguments: [BSApp.name()])
     
     func action() {
-        if let appId = RecommendApp.allCases.filter({ $0.data.bundleId != (Bundle.main.bundleIdentifier ?? "") }).first?.data.appId {
+        if let appId = RecommendApp.allCases.filter({ $0.data.bundleId == (Bundle.main.bundleIdentifier ?? "") }).first?.data.appId {
             guard let writeReviewURL = URL(string: "https://apps.apple.com/app/\(appId)?action=write-review")
             else { fatalError("Expected a valid URL") }
             UIApplication.shared.open(writeReviewURL, options: [:], completionHandler: nil)
