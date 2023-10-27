@@ -12,6 +12,7 @@ enum ContactType: Identifiable {
     static var allTypes: [ContactType] = [
         .appImage(item: TwitterContactItem()),
         .appImage(item: WeiboContactItem()),
+        .appImage(item: XiaoHongshu()),
         .systemImage(item: EmailContactItem())
     ]
     
