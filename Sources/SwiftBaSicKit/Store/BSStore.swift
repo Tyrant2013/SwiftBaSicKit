@@ -17,9 +17,9 @@ public enum StoreError: Error {
 @available(iOS 15, *)
 public class BSStore: ObservableObject {
     
-    typealias Transaction = StoreKit.Transaction
-    typealias RenewalInfo = StoreKit.Product.SubscriptionInfo.RenewalInfo
-    typealias RenewalState = StoreKit.Product.SubscriptionInfo.RenewalState
+    public typealias Transaction = StoreKit.Transaction
+    public typealias RenewalInfo = StoreKit.Product.SubscriptionInfo.RenewalInfo
+    public typealias RenewalState = StoreKit.Product.SubscriptionInfo.RenewalState
     
     /// 一次购买，用的多了，永久会员经常用
     @Published private(set) var nonconsumableProducts: [Product] = []
@@ -55,11 +55,11 @@ public class BSStore: ObservableObject {
         }
     }
     
-    init() {
+    public init() {
         productIds = BSStore.loadProductIds()
     }
     
-    init(productIds: [String]) {
+    public init(productIds: [String]) {
         self.productIds = productIds
     }
     
@@ -68,7 +68,7 @@ public class BSStore: ObservableObject {
     }
     
     @MainActor
-    func requestProducts() async throws {
+    public func requestProducts() async throws {
         do {
             /// 使用 Products.plist 文件定义的标识符从 App Store 申请产品。
             let storeProducts = try await Product.products(for: productIds)
@@ -106,7 +106,7 @@ public class BSStore: ObservableObject {
         }
     }
     
-    func purchase(_ product: Product) async throws -> Transaction? {
+    public func purchase(_ product: Product) async throws -> Transaction? {
         //Begin purchasing the `Product` the user selects.
         let result = try await product.purchase()
 
@@ -129,7 +129,7 @@ public class BSStore: ObservableObject {
         }
     }
     
-    func restore() async throws {
+    public func restore() async throws {
         try await AppStore.sync()
     }
     
