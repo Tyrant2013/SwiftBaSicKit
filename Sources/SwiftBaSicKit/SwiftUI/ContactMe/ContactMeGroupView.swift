@@ -17,7 +17,7 @@ public struct ContactMeGroupView: View {
             Text("Config.Contact.Me", bundle: .module, comment: "联系开发者")
                 .modifier(ConfigSectionTitleModifier())
             AppDivider()
-                .padding(.vertical, 8)
+                .padding(.top, 8)
             ForEach(items) { ContactMeItem(type: $0) }
         }
     }
@@ -26,33 +26,35 @@ public struct ContactMeGroupView: View {
 fileprivate struct ContactMeItem: View {
     let type: ContactType
     var body: some View {
-        HStack {
-            Group {
-                switch type {
+        Button(action: type.action) {
+            HStack {
+                Group {
+                    switch type {
                     case .appImage(let item):
                         Image(item.imageName, bundle: .module)
                             .resizable()
                     case .systemImage(let item):
                         Image(systemName: item.imageName)
                             .resizable()
+                    }
                 }
+                .scaledToFit()
+                .frame(width: 24, height: 24)
+                .font(.system(size: 18))
+                .clipShape(RoundedRectangle(cornerRadius: 6))
+                .padding(.leading, 8)
+                Text(type.name)
+                    .font(.system(size: 16).bold())
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .font(.callout)
+                    .padding(.trailing)
             }
-            .scaledToFit()
-            .frame(width: 24, height: 24)
-            .font(.system(size: 18))
-            .clipShape(RoundedRectangle(cornerRadius: 6))
-            .padding(.leading, 8)
-            Text(type.name)
-                .font(.system(size: 16).bold())
-            Spacer()
-            Image(systemName: "chevron.right")
-                .font(.callout)
-                .padding(.trailing)
+            .padding(.vertical, 12)
+            .overlay(AppDivider(), alignment: .bottom)
         }
-        .padding(.vertical, 12)
-        .overlay(AppDivider(), alignment: .bottom)
-        .makeClickable()
-        .onTapGesture(perform: type.action)
+//        .makeClickable()
+//        .onTapGesture(perform: type.action)
     }
         
 }

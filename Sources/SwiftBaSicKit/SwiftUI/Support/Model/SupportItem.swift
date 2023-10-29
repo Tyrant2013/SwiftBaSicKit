@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-protocol FeedbackItem: Identifiable {
+protocol SupportItem: Identifiable {
     var id: UUID { get }
     var imageName: String { get }
     var title: String { get }
@@ -16,17 +16,17 @@ protocol FeedbackItem: Identifiable {
     func action() -> Void
 }
 
-enum FeedbackType: Identifiable, CaseIterable {
+enum SupportType: Identifiable, CaseIterable {
     var id: Self { self }
     
-    case email, rate
+    case rate
 }
 
-extension FeedbackType {
-    var data: any FeedbackItem {
+extension SupportType {
+    var data: any SupportItem {
         switch self {
-        case .email: return Email()
         case .rate: return RateApp()
+//        case .share: return ShareApp()
         }
     }
 }

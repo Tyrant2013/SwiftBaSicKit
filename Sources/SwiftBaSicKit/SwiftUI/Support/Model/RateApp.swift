@@ -8,12 +8,12 @@
 import Foundation
 import SwiftUI
 
-struct RateApp: FeedbackItem {
+struct RateApp: SupportItem {
     var id: UUID = .init()
     
     var imageName: String = "star.bubble"
     
-    var title: String = "Feedback.RateUs".localizable(bundle: .module, arguments: [BSApp.name()])
+    var title: String = "Support.RateUs".localizable(bundle: .module, arguments: [BSApp.name()])
     
     func action() {
         if let appId = RecommendApp.allCases.filter({ $0.data.bundleId == (Bundle.main.bundleIdentifier ?? "") }).first?.data.appId {

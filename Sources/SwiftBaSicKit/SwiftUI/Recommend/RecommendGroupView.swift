@@ -101,6 +101,8 @@ public struct RecommendGroupView: View {
         ConfigSectionContainer {
             Text("Recommend.Developer", bundle: .module, comment: "开发者其它应用")
                 .modifier(ConfigSectionTitleModifier())
+            AppDivider()
+                .padding(.top, 8)
             let rows = Array(repeating: GridItem(.flexible(), spacing: 0), count: 2)
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: rows, spacing: 0) {
