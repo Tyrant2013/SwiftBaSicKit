@@ -11,6 +11,12 @@ public struct SupportItemRow: View {
     let imageName: String
     let title: String
     let action: () -> Void
+    
+    public init(imageName: String, title: String, action: @escaping () -> Void) {
+        self.imageName = imageName
+        self.title = title
+        self.action = action
+    }
     public var body: some View {
         Button(action: action) {
             HStack {
