@@ -18,13 +18,21 @@ public struct ContactMeGroupView: View {
                 .modifier(ConfigSectionTitleModifier())
             AppDivider()
                 .padding(.top, 8)
-            ForEach(items) { ContactMeItem(type: $0) }
+            ForEach(items) {
+                ContactMeItem(type: $0)
+                    .padding(.leading, 8)
+                    .padding(.vertical, 12)
+                    .overlay(AppDivider(), alignment: .bottom)
+            }
         }
     }
 }
 
-fileprivate struct ContactMeItem: View {
+struct ContactMeItem: View {
     let type: ContactType
+    var imageSize: CGSize = .init(width: 24, height: 24)
+    var titleFontSize: CGFloat = 16
+    var titleWeight: Font.Weight = .bold
     var body: some View {
         Button(action: type.action) {
             HStack {
@@ -39,22 +47,16 @@ fileprivate struct ContactMeItem: View {
                     }
                 }
                 .scaledToFit()
-                .frame(width: 24, height: 24)
-                .font(.system(size: 18))
+                .frame(width: imageSize.width, height: imageSize.height)
                 .clipShape(RoundedRectangle(cornerRadius: 6))
-                .padding(.leading, 8)
                 Text(type.name)
-                    .font(.system(size: 16).bold())
+                    .font(.system(size: titleFontSize).weight(titleWeight))
                 Spacer()
                 Image(systemName: "chevron.right")
                     .font(.callout)
                     .padding(.trailing)
             }
-            .padding(.vertical, 12)
-            .overlay(AppDivider(), alignment: .bottom)
         }
-//        .makeClickable()
-//        .onTapGesture(perform: type.action)
     }
         
 }
