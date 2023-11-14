@@ -30,9 +30,19 @@ public struct ContactMeGroupView: View {
 
 public struct ContactMeItem: View {
     let type: ContactType
-    var imageSize: CGSize = .init(width: 24, height: 24)
-    var titleFontSize: CGFloat = 16
-    var titleWeight: Font.Weight = .bold
+    let imageSize: CGSize
+    let titleFontSize: CGFloat
+    let titleWeight: Font.Weight
+    
+    public init(type: ContactType,
+         imageSize: CGSize = .init(width: 24, height: 24), 
+         titleFontSize: CGFloat = 16,
+         titleWeight: Font.Weight = .bold) {
+        self.type = type
+        self.imageSize = imageSize
+        self.titleFontSize = titleFontSize
+        self.titleWeight = titleWeight
+    }
     public var body: some View {
         Button(action: type.action) {
             HStack {

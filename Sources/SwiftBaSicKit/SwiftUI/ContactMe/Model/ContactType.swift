@@ -9,7 +9,7 @@ import Foundation
 
 public enum ContactType: Identifiable {
     
-    static var allTypes: [ContactType] = [
+    public static var allTypes: [ContactType] = [
         .appImage(item: TwitterContactItem()),
         .appImage(item: WeiboContactItem()),
         .appImage(item: XiaoHongshu()),
