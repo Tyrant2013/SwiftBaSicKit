@@ -28,12 +28,12 @@ public struct ContactMeGroupView: View {
     }
 }
 
-struct ContactMeItem: View {
+public struct ContactMeItem: View {
     let type: ContactType
     var imageSize: CGSize = .init(width: 24, height: 24)
     var titleFontSize: CGFloat = 16
     var titleWeight: Font.Weight = .bold
-    var body: some View {
+    public var body: some View {
         Button(action: type.action) {
             HStack {
                 Group {
