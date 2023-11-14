@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ContactType: Identifiable {
+public enum ContactType: Identifiable {
     
     static var allTypes: [ContactType] = [
         .appImage(item: TwitterContactItem()),
@@ -16,7 +16,7 @@ enum ContactType: Identifiable {
         .systemImage(item: EmailContactItem())
     ]
     
-    var id: UUID {
+    public var id: UUID {
         switch self {
             case .appImage(let item): item.id
             case .systemImage(let item): item.id
@@ -28,7 +28,7 @@ enum ContactType: Identifiable {
     case systemImage(item: any Contact)
 }
 
-extension ContactType {
+public extension ContactType {
     var name: String {
         switch self {
             case .appImage(let item): return item.name

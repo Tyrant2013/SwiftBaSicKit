@@ -7,15 +7,15 @@
 
 import Foundation
 
-protocol ContactItem: Identifiable {
+public protocol ContactItem: Identifiable {
     var id: UUID { get }
     
     var imageName: String { get }
     var name: String { get }
 }
 
-protocol ContactItemAction {
+public protocol ContactItemAction {
     func click() -> Void
 }
 
-typealias Contact = ContactItem & ContactItemAction
+public typealias Contact = ContactItem & ContactItemAction
