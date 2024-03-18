@@ -422,7 +422,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "商店评价 %@"
+            "value" : "商店评分 %@"
           }
         },
         "zh-Hant" : {

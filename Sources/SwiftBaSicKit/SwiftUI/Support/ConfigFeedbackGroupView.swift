@@ -44,10 +44,10 @@ public struct ConfigSupportGroupView<FeatureContent: View>: View {
     @State var startShare = false
     public var body: some View {
         ConfigSectionContainer {
-            Text("Support Us", bundle: .module, comment: "支持开发者")
-                .modifier(ConfigSectionTitleModifier())
-            AppDivider()
-                .padding(.top, 8)
+//            Text("Support Us", bundle: .module, comment: "支持开发者")
+//                .modifier(ConfigSectionTitleModifier())
+//            AppDivider()
+//                .padding(.top, 8)
             ForEach(SupportType.allCases) { item in
                 let data = item.data
                 SupportItemRow(imageName: data.imageName, title: data.title, action: data.action)
