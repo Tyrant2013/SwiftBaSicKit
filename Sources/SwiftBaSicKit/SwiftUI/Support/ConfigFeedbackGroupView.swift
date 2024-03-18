@@ -10,6 +10,7 @@ import SwiftUI
 public struct SupportItemRow: View {
     let imageName: String
     let title: String
+    var showDivider: Bool = true
     let action: () -> Void
     
     public init(imageName: String, title: String, action: @escaping () -> Void) {
@@ -28,9 +29,7 @@ public struct SupportItemRow: View {
             .font(.system(size: 18))
             .padding(.vertical, 8)
         }
-        .overlay(
-            AppDivider(), alignment: .bottom
-        )
+        .overlay(AppDivider().opacity(showDivider ? 1 : 0), alignment: .bottom)
     }
 }
 

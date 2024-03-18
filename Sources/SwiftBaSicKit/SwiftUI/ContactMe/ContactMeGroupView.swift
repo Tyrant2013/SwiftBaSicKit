@@ -9,7 +9,7 @@ import SwiftUI
 
 public struct ContactMeGroupView: View {
     public init() { }
-    
+    var showDivider = false
     private let items: [ContactType] = ContactType.allTypes
     
     public var body: some View {
@@ -22,7 +22,7 @@ public struct ContactMeGroupView: View {
                 ContactMeItem(type: $0)
                     .padding(.leading, 8)
                     .padding(.vertical, 12)
-                    .overlay(AppDivider(), alignment: .bottom)
+                    .overlay(AppDivider().opacity(showDivider ? 1 : 0), alignment: .bottom)
             }
         }
     }
