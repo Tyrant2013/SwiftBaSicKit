@@ -8,17 +8,17 @@
 import SwiftUI
 
 public struct SupportItemRow: View {
-    public let imageName: String
-    public let title: String
-    public var showDivider: Bool = true
-    public let action: () -> Void
+    let imageName: String
+    let title: String
+    var showDivider: Bool = true
+    let action: () -> Void
     
-//    public init(imageName: String, title: String, showDivider: Bool = true, action: @escaping () -> Void) {
-//        self.imageName = imageName
-//        self.title = title
-//        self.showDivider = showDivider
-//        self.action = action
-//    }
+    public init(imageName: String, title: String, showDivider: Bool = true, action: @escaping () -> Void) {
+        self.imageName = imageName
+        self.title = title
+        self.showDivider = showDivider
+        self.action = action
+    }
     
     public var body: some View {
         Button(action: action) {
